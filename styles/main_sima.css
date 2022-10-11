@@ -1,0 +1,103 @@
+
+
+/* sima's part*/
+.container_team{
+  height:708px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: url('../images/bgk-middle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  background-color: white;
+  height: 308px;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.flex_team{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button{
+  
+}
+.linkBox{
+  margin: 30px;
+  /*background-color: #ffffff;*/
+  border: 1px solid cyan;
+  opacity: 0.6;
+}
+
+.buttonLink{
+  text-decoration: none;
+  color: cyan;
+}
+
+.container_feedback{
+  justify-content: center;
+  height:688px;
+  display: flex;
+  
+  margin: 68px;
+}
+
+.feedback{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*gap: 10px;*/
+  justify-content: space-between;
+}
+
+
+
+.imgDim{
+  height:40px;
+  /*width:168px;*/
+  margin:20px;
+}
+.imageCont{
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+}
+
+
+.fieldSize{
+  padding-left:10px;
+  height: 44px;
+  width: 452px;
+}
+
+#msgBox{
+  padding-left: 10px;
+  height: 200px;
+  width: 452px;
+}
+
+#teamPart{
+  height:708px;
+}
+
+.flex{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#inputPart{
+  height:688px;
+  display:inline-flex;
+}
+

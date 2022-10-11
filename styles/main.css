@@ -1,0 +1,732 @@
+*{
+    font-family: "Roboto", "Playfair Display", "Hammersmith One", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #413d4b;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/* Header */
+.header {
+  padding-top: 30px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo_word{
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 300;
+  color: #00e0d0;
+  margin-left: 10px;
+
+}
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 1px;
+    background-color: white;
+    padding: 5px;
+  }
+  
+  .expertise-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .expertise_text {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .web_icon {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .web_text {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  h4 {
+      font-size: 14px;
+  }
+  
+  .web_text, p {
+      font-size: 14px;
+  }
+  
+  .brand_icon {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .brand_text {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
+  .mobile_icon {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
+  .mobile_text {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  
+  .search_icon {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  
+  .search_text {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  
+  .game_icon {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  
+  .game_text {
+    grid-column: 3;
+    grid-row: 5;
+  }
+  
+  .love_icon {
+    grid-column: 4;
+    grid-row: 4;
+  }
+
+
+/* Navigation */
+.nav {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+.nav__link {
+  position: relative;
+  display: inline-block;
+  font-family: 'Roboto';
+  font-weight: 400;
+  vertical-align: top;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  /* transition: color .1s liner; */
+}
+.nav__link:hover{
+  color: #00e0d0;;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/bgk-header.png') center center / cover no-repeat;
+
+}
+.intro__inner{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+}
+.intro__inner_title{
+  color: #ffffff;
+  font-family: "Playfair Display";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+}
+.intro__inner_descrip{
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+.intro__inner_title::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #00e0d0;
+}
+/* Button */
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 35px;
+  border: 2px solid #00e0d0;
+  font-family: 'Hammersmith';
+  cursor: pointer;
+  color: #00e0d0;
+  text-decoration: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 50px;
+  transition: background .1s linear;
+  position: absolute;
+  left: 500px;
+}
+.button:hover{
+  background: #00e0d0;
+  border: none;
+  opacity: 0.9;
+  color:#fff;
+}
+/*ABOUT*/
+.about{
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 65px 0;
+}
+.about__img{
+  width: 235px;
+  height: 229px;
+}
+.about__text{
+  max-width: 540px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.about__btn{
+  margin-top: 30px;
+  margin-left: 0px;
+  position: static;
+  
+}
+.title{
+  font-family: "Playfair Display";
+  font-size: 22px;
+  font-weight: 700;
+}
+.about__descr {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
+}
+
+/*VIDEO*/
+.video{
+  height: 550px;
+  background: url('../images/bgk-middle.png') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 550px;
+}
+.video__descr{
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 120px;
+}
+.expertise{
+  margin: 70px 0;
+}
+.title {
+  text-align: center;
+}
+.title__descr{
+  text-align: center;
+  margin-top: 16px;
+  color: #2f2d35;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-weight: 400;
+}
+.title__descr::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #413d4b;
+  opacity: 0.3;
+}
+
+/* EXPERTISE CONTAINER FI*/
+.expertise-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 1px;
+  background-color: white;
+  padding: 5px;
+ }
+
+.containerS{
+  text-align: center;
+}
+
+.fieldSize{
+  padding-left:10px;
+  height: 44px;
+  width: 452px;
+}
+
+#msgBox{
+  padding-left: 10px;
+  height: 200px;
+  width: 452px;
+}
+
+#teamPart{
+  height:708px;
+}
+
+.flex{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  height: 308px;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#inputPart{
+  height:688px;
+  display:inline-flex;
+}
+
+.imgDim{
+  height:40px;
+  width:168px;
+  margin:20px;
+}
+
+.expertise-container div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.expertise_text {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.web_icon {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.web_text {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.web_text, p {
+    font-size: 14px;
+}
+
+.brand_icon {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.brand_text {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.mobile_icon {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.mobile_text {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.search_icon {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.search_text {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.game_icon {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.game_text {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.love_icon {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.love_text {
+  grid-column: 4;
+  grid-row: 5;
+}
+/* EXPERTISE CONTAINER END */
+
+/* TEAM */
+.team{
+  background: url('../images/team-bg.png') center center / cover no-repeat;
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  margin: 65px 0;
+
+}
+.team__title{
+  color: #fff;
+}
+.team__text{
+  color: #f9f9f9;
+  font-family: "Playfair Display";
+  letter-spacing: 1.05px;
+}
+.team__text::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+.team__descr{
+  color: #f9f9f9;
+  font-family: "Roboto";
+  text-align: center;
+  letter-spacing: 1.05px;
+  margin: 90px 0;
+}
+
+.team__inner{
+  display: flex;
+  margin: 70px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__block {
+  display: flex;
+  gap: 20px
+
+}
+.team__item{
+  width: 220px;
+  min-height: 300px;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team__title{
+  padding-top: 13px;
+}
+.team__subtitle{
+  color: #fafafa;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  opacity: .7;
+  margin-top: 7px;
+}
+.team__btn{
+  position: absolute;
+  top: 600px;
+}
+
+
+/* sima's part*/
+.container_team{
+  height:708px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: url('../images/bgk-middle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  background-color: white;
+  height: 308px;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.flex_team{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linkBox{
+  margin: 30px;
+  /*background-color: #ffffff;*/
+  border: 1px solid cyan;
+  opacity: 0.6;
+}
+
+.buttonLink{
+  text-decoration: none;
+  color: cyan;
+}
+
+.container_feedback{
+  justify-content: center;
+  height:688px;
+  display: flex;
+  
+  margin: 68px;
+}
+
+.feedback{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*gap: 10px;*/
+  justify-content: space-between;
+}
+
+
+
+.imgDim{
+  height:40px;
+  /*width:168px;*/
+  margin:20px;
+}
+.imageCont{
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+}
+
+
+.fieldSize{
+  padding-left:10px;
+  height: 44px;
+  width: 452px;
+}
+
+#msgBox{
+  padding-left: 10px;
+  height: 200px;
+  width: 452px;
+}
+
+#teamPart{
+  height:708px;
+}
+
+.flex{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#inputPart{
+  height:688px;
+  display:inline-flex;
+}
+footer .footer {
+  background-image: url('../images/bgk-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: padding-box;
+  padding: 4rem 0;     /*more responsive than fixed height? -> test*/
+  /* height: 400px; */
+  color: #fff;
+}
+
+footer p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+footer h4 {
+  font-weight: bolder;
+}
+
+/* General Flex Settings for the Footer and Sub-Containers */
+
+footer .footerContent {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer .ftBox {
+  height: 250px;
+  width: 320px;
+}
+
+footer .ftDisclaimer, footer .ftNewsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* About & Disclaimer Section */
+
+footer a.tajamLogo p {                       /*styling applies only to the footer logo. If you all aggree we apply it globally.*/
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 100;
+  background: linear-gradient(to bottom right, rgb(0,224,208), rgb(65, 60, 107));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 10px;
+}
+
+footer a.tajamLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem; 
+}
+
+footer .disclaimerLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Our Studio section */
+
+footer .ftContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+
+footer .ftFloatContainer {
+  margin: 50px 0 15px;
+}
+
+footer .ftFloatContainer img {
+  width: 1rem;
+}
+
+footer .ftFloatChild {
+  width: 90%;
+  float: right;
+}
+
+/*Stay in Touch Section*/
+
+footer .subscribeNewsletter {
+  margin-top: 50px;
+  vertical-align: middle;
+}
+
+footer .inputNewsletterEmail {
+  background: none;
+  color: lightgrey;
+  border: 1px solid grey;
+  padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+}
+
+footer .btnSubmitNewsletter {
+  padding: 0.425rem 1.25rem;
+  opacity: 0.4;
+  border: none;
+}
+
+footer .btnSubmitNewsletter img {
+  width: 25px;
+}
+
+footer .btnSubmitNewsletter:hover {
+  opacity: 0.5;
+}
+
+footer .socialMediaIcons {
+  width: 1.7rem;
+  margin: 1rem 0.25rem 0 0;
+}
